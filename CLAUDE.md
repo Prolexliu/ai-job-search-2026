@@ -1,13 +1,13 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Alex Liu
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+<!-- Populated by /setup (Path A) on 2026-08-17 from documents/. -->
+<!-- Authoritative source: documents/cv/MASTER-RESUME-REFERENCE.md — where anything disagrees, it wins. -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Alex Liu, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
-2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
-3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
+2. **CV tailoring** - Adapt the active `arial-onepage` .docx template (see `05-cv-templates.md`) to target specific roles
+3. **Cover letter writing** - Draft targeted cover letters
 4. **Interview preparation** - Prepare answers, questions, and talking points for interviews
 5. **Career strategy** - Advise on positioning and personal branding
 
@@ -16,76 +16,93 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Alex Liu
+- **Location:** New York, NY, USA (**does not relocate** — NYC metro on-site/hybrid or remote only)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | English | Native |
+  | Mandarin Chinese | Native fluency (grew up in Taipei) |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Position eliminated 2026-06-17 in post-acquisition restructuring (Medmo acquired by Covera Health). Actively searching.
+- **LinkedIn headline:** "Director of Product & Engineering | Healthcare AI | Epic/EHR Integration | Cornell MBA"
+
+> ⚠️ **Active non-compete until 2027-06-17** barring work competitive with Medmo (AI medical
+> imaging scheduling / prior auth) in healthcare, with a 10-business-day notice requirement and
+> disclosure to prospective employers. Not attorney-reviewed. Surface any plausible overlap
+> rather than silently passing or failing the role — see `04-job-evaluation.md`.
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **MBA (Johnson) & MS, Healthcare Leadership, Policy & Research (Weill Cornell)** (2020-2022) - Cornell University
+  - Short form when space is tight: "MBA & MS, Healthcare Policy"
+  - **Spell out in full** on policy-forward, privacy, and responsible-AI roles — the policy credential is the differentiator there
+- **BS, Biomedical Engineering** (2009-2013) - Georgia Institute of Technology
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Director of Product and Engineering | Senior Technical Product Manager** (2021 - 2026) - **Medmo Inc.** (New York, NY)
+  - Led the B2C to B2B pivot that doubled ARR year over year; landed the first 700+ employee enterprise client; set up the Covera acquisition
+  - Shipped AI voice agents and OCR into HIPAA/SOC 2 production, absorbing 10x volume with no added headcount and zero HIPAA incidents in 18+ months
+  - Scaled the cross-functional org from 4 to 15+; architected the microservices platform (-40% deploy cycles, -60% latency)
+  - *Promotion detail: Director 2023-2026, Sr Technical PM 2021-2023. **Never write "Present."***
+- **Engineering & Architecture Advisor** (2024 - Present) - **Laurel Health & radEmploy** (New York, NY)
+  - Advising two early-stage VC-backed healthcare companies on HIPAA-compliant architecture and product strategy
+- **Technical Architect | Senior IT Engineer** (2017 - 2021) - **New York-Presbyterian Hospital** (New York, NY)
+  - Directed a $1B Epic integration across 12 systems, 25-person cross-functional team; top 5% org-wide
+  - Accelerated the COVID-19 go-live by a month; consolidated 500+ interfaces to ~100
+- **Application Consultant** (2015 - 2017) - **Oracle Cerner** (Brooklyn, NY)
+  - Delivered an EHR to HIMSS Level 7; 140+ HL7 interfaces, 180+ devices, 10,000+ messages/day; -70% manual documentation
+- **Program Developer** (2013 - 2015) - **Medical Information Technology (Meditech)** (Atlanta, GA)
+  - 10+ CMS/HIPAA-aligned features for HomeCare software
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Healthcare product & engineering leadership, EHR/EMR integration (Epic, Cerner, HL7 v2, FHIR R4), clinical workflow design, production AI voice agents (tool use, orchestration, human-in-the-loop), OCR automation, HIPAA/SOC 2 delivery, microservices architecture
+- **Secondary:** Python, TypeScript/JavaScript, Node.js, React.js, PostgreSQL/MySQL, REST APIs, AWS (incl. Bedrock), GCP, CI/CD, A/B testing, funnel & cohort analytics, SQL, unit-economics modeling
+- **Domain:** Clinical workflows, revenue cycle (HB/PB interfaces), registration/eligibility & coverage, prior authorization / utilization management, multi-sided healthcare marketplaces. **Do NOT claim fintech.**
+- **Software:** Epic, Cerner Millennium, Allscripts, ARIA Radiation Oncology, Claude Code (daily)
+
+> **AI honesty rule (locked 2026-07-15 — never soften).** *Shipped in production:* AI voice agents
+> that take actions, plus OCR. *Prototyped only:* LLM and retrieval (NotebookLM POCs, evaluated and
+> declined). **Never claim a production RAG or LLM-eval pipeline Alex built.** Voice agents are the
+> legitimate agentic-AI proof. Not held at all: Kubernetes, Databricks, Spark, IaC, BigQuery.
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+*(none on file)*
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+*(none on file)*
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+*(none on file)*
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+<!-- No formal assessment on file. Inferred by /setup — see 02-behavioral-profile.md. -->
+- **Operator-builder** - forms a thesis, ships the scrappy version, defines the metric that proves it worked
+- **Calibrated honesty** - self-imposed rules about what he will and won't claim; a differentiator in technical loops
+- **Strengths:** Spotting when the strategy (not just execution) is wrong; shipping into regulatory constraint rather than around it; building the system and then the team that runs it
+- **Growth areas:** Title-vs-scope tension (Director scope, 5 yrs PM-titled); retrieval/eval half of AI; domain breadth outside healthcare
+- **Thrives in:** Close to the customer and the product surface, embedded cross-functionally, with clear ownership and a real escalation path
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- 0 to 1 product building, and shipping AI into regulated production where being wrong has real cost
+- Translating clinical and policy constraints into working systems
+- Embedded/forward-deployed work with client IT, clinical, and executive stakeholders
+- Staying hands-on — architecture and building with Claude Code alongside leading
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **AI-native healthtech:** Abridge, Qventus, Cohere Health, TailorMed, Assort Health, Grow Therapy, Candid Health, SmarterDx
+- **Frontier AI deploying into enterprises:** Anthropic, OpenAI, Microsoft AI, Scale AI, Google
+- **Operator-depth healthtech scaleups:** Nitra, Garner, Maven Clinic, Clover Health, Oscar, Headway, Zocdoc
+- **Health-system-facing / interoperability:** Qualified Health, 1upHealth, Counterpart Health
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- **Base salary below $180,000** — hard filter; check the posted band before drafting
+- **Relocation** — NYC metro or remote only. This is the single most common reason past applications were passed on.
+- Roles requiring a claim of production RAG/LLM pipelines to succeed
+- Fintech-domain roles (cannot claim the domain)
+- Privacy-specialist roles requiring a compliance-program track record (CIPP/CIPM)
+- Pure people-management with no product surface
+- **Non-compete check required** for any healthcare employer plausibly competing with Medmo, until 2027-06-17
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -96,7 +113,7 @@ automatically from your Languages table above - don't duplicate them here. -->
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
 2. **Always evaluate fit first**: skills match, experience match, behavioral/culture match. Present this assessment to the user before proceeding.
-3. If good fit: create targeted CV (`cv/main_<company>_<role>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
+3. If good fit: create targeted CV (`cv/main_<company>_<role>.docx`, from the active `arial-onepage` template) and cover letter
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 

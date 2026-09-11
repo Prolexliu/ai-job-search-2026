@@ -4,6 +4,21 @@ framework_version: 1.4.1
 
 # CV Templates and Tailoring Guide
 
+<!-- BEGIN ACTIVE-TEMPLATE (managed by /add-template - do not edit by hand) -->
+> **Active template override: `arial-onepage`**
+>
+> A custom template is active. Where this block conflicts with the stock guidance below, this block wins. Structural advice below (tailoring, page-budget, cutting rules) still applies.
+>
+> - **Template skeleton:** `templates/cv/arial-onepage/template.docx` — use this as the structural reference instead of the stock template
+> - **Manifest:** `templates/cv/arial-onepage/TEMPLATE.md` — read this for style rules, the token inventory, and known pitfalls before drafting
+> - **Source extension:** `.docx` (Office Open XML, not LaTeX)
+> - **Compile command:** `soffice --headless --convert-to pdf --outdir . <file>.docx` (not lualatex — `/apply`'s compile step must use this instead). On macOS use `/Applications/LibreOffice.app/Contents/MacOS/soffice`.
+> - **Fonts:** Arial throughout (system font, must be installed)
+> - **Page limit:** exactly 1 page
+> - **Output file:** `cv/main_<company>_<role>.docx`; fill the skeleton's `[TOKEN]` placeholders with `templates/cv/arial-onepage/fill_template.py` (unpack → edit `word/document.xml` text runs → repack). Never rebuild the file with a docx generator.
+<!-- END ACTIVE-TEMPLATE -->
+
+
 <!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
 
 ## Template: LaTeX moderncv (Banking Style)
@@ -129,12 +144,39 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+> **17 maintained profile-statement variants (A–Q) live in
+> `documents/cv/MASTER-RESUME-REFERENCE.md` §4.** That file is the source; do not duplicate the
+> statements here or drift from them. Each variant names the role types it fits, its lead STAR
+> stories, its skills block, its Additional-Information ordering, and — critically — its
+> *honest-framing note* recording what must be disclosed rather than papered over.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**Variant selection, in brief** (read the master file for the full text and caveats):
+
+| Variant | Use for |
+|---|---|
+| A | AI-native healthtech, Staff PM |
+| B | Director/VP Product & Engineering, operator-depth |
+| C | Enterprise AI solutions architect / technical advisor |
+| D | Technical program management |
+| E | Mission-driven / nonprofit / policy-adjacent |
+| F | Engineering leadership, technical depth |
+| G | Epic / EHR integration, forward-deployed health-system-facing |
+| H | Consumer marketplace / B2C / insurance |
+| I | Forward-deployed / client-services PM, PM-of-PMs |
+| J | Mission-driven AI product (big-tech incubator, civic tech) |
+| K | Forward-deployed AI engineer, hands-on IC |
+| L | Privacy / policy product for health AI |
+| M | Founder-mode IC product, non-healthcare "GM" reqs |
+| N | Provider workflow / clinical productivity |
+| O | Employer / benefit-facing product & revenue systems |
+| P | Technical platform / high-integrity systems |
+| Q | Healthcare platform portfolio (payments × interop × data); **all VP/Head-of reqs** |
+
+**Three rules that govern every build:**
+
+1. **Default opener for any product role is "Product leader."** Alex is Director-level; mirroring "Senior/Staff Product Manager" undersells. Only mirror the posting title when it is *more* senior than Director. **Exception for VP/Head-of reqs (Variant Q): use "Product and engineering leader"** — writing "VP of Product" as self-description is a title claim he cannot make.
+2. **Select, don't rewrite.** Bullets come from the canonical library in `MASTER-RESUME-REFERENCE.md` §5, chosen by theme tag against the posting's emphasis.
+3. **Re-dump the runs and fix bullet lead-ins after any body swap.** The bold lead-ins are *separate XML runs* from the bullet bodies; swapping bodies alone produces mismatches like a team-building lead-in sitting on top of an AI bullet. Learned on the Rho build, 2026-08-06.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

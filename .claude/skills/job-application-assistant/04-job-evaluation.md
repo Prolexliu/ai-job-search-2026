@@ -60,9 +60,11 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Healthcare product leadership (0→1 and platform) · EHR/EMR integration (Epic, Cerner, HL7 v2, FHIR R4) · Clinical workflow design · Revenue cycle and eligibility/coverage interfaces · Prior authorization / utilization management · Production AI voice agents (tool use, orchestration, human-in-the-loop) · OCR document automation · HIPAA/SOC 2 regulated delivery · Microservices architecture · Python, TypeScript, Node.js, React, PostgreSQL/MySQL · A/B testing, funnel and cohort analytics, SQL · Team building 4→15+
+
+**Moderate match areas:** AWS/GCP (incl. Bedrock) · Data schema and pipeline design · Unit-economics modeling · PM management (PM-of-PMs) · FHIR R4 API depth · Enterprise/forward-deployed delivery as a *function*
+
+**Weak match areas — never claim:** Production RAG or LLM-evaluation pipelines (prototyped only, NotebookLM POCs) · Fintech as a domain · Kubernetes, Databricks, Spark, IaC, observability tooling, BigQuery · Epic module certifications · SMART on FHIR, CDS Hooks, In Basket/SendMessage API (ramping, not expert) · Privacy-specialist track record (CIPP/CIPM; owned compliance *posture*, did not run privacy reviews) · GDPR / multi-jurisdictional privacy · Claims adjudication, 835 remittance, benefits design, plan configuration · Behavioral/mental-health clinical terminology · Revenue *collection* (has revenue reporting, not invoicing/billing at ARR scale)
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +76,23 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Healthcare technology across the full ecosystem (patients, providers, payers, employers) · Director-level product **and** engineering ownership · Enterprise EHR integration at health-system scale · Startup 0→1 through acquisition · Regulated, multi-sided marketplaces
+
+**Moderate:** VP/Head-of product roles (see the tenure note below) · Pure-engineering leadership (last IC-adjacent architecture was Medmo platform work) · Forward-deployed/solutions engineering (a *function* Alex performed at NYP and Medmo — **never a title he held**) · Non-healthcare regulated domains (argue problem-shape, not domain)
+
+**Entry-level / do not target:** Fintech-domain roles · Privacy-specialist roles requiring a compliance-program track record · Data-platform roles requiring Spark/Databricks/Kubernetes depth
+
+> **Tenure math — check this before scoring any VP/Head-of req.** Strict count is
+> **5 years PM-titled (2021–2026)** and **3 years leading (2023–2026)**. NYP was a Technical
+> Architect title, not a PM one. A req asking "10+ yrs product management, 5+ yrs leading
+> teams" is a genuine shortfall. Do not pad — the dates are locked. The established play is to
+> state the shortfall plainly and reframe as *level me on evidence, not title chronology*,
+> explicitly offering a Group PM / Senior Staff conversation instead.
+
+> **Level optics — the most likely silent screen-out on IC reqs.** When Alex applies IC at a
+> company that also has a leadership req, the recruiter's unspoken question is *"why is a
+> Director applying down, and will he leave?"* Answer it in the letter; never let it be
+> inferred.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +123,27 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Product and engineering leadership at the platform layer where healthcare delivery, health data, and AI meet — Director/VP of Product, Head of Product, Group PM, or Staff/Principal PM
+- Roles that keep the product surface in hand rather than pulling further into pure management; Alex has said explicitly that management pulled him away from the customer
+- AI-native healthtech and frontier-AI companies deploying into regulated enterprises (applied AI architect, forward-deployed engineering/product)
+- Engineering leadership (Head of Engineering / Director of Engineering) where the technical-depth-plus-healthcare combination is the scarce asset
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: 0→1 product building · shipping AI into regulated production · translating clinical and policy constraints into working systems · embedded/forward-deployed work with client IT, clinical, and executive stakeholders · hands-on architecture and building with Claude Code · owning a surface end to end including its unit economics
+- Tasks that drain: pure people-management with no product surface · roles with no technical depth to engage · organizations without a real escalation path or with unclear ownership
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Position eliminated 2026-06-17; searching actively with severance runway. Prefers not to jump at the first available thing.
+- **Flexibility**: New York, NY. **Relocation is a hard FAIL** — this has been the single most common reason for passing on otherwise strong matches. Remote, NYC hybrid, and NYC on-site all PASS.
+- **Professional development**: Deepening production-AI engineering credibility (the honest gap is retrieval/eval, not agents); staying at the frontier of AI-assisted engineering workflows.
+
+**Non-compete gate (until 2027-06-17):** Before recommending any healthcare or medical-services
+employer, check whether it plausibly competes with Medmo (AI-powered medical imaging scheduling
+and prior authorization). If it does, **flag it to Alex with the specific overlap named** rather
+than scoring it as a clean pass — the agreement also requires 10 business days' notice to Medmo
+and disclosure to the prospective employer, and it has never been evaluated by an attorney. This
+is a surfacing rule, not an automatic exclusion; the judgment is Alex's.
 
 ### 6. Salary Benchmark (Optional)
 
@@ -142,6 +166,39 @@ Present findings as:
 Interpret results relative to the baseline defined in the data file's metadata. For index-based data, higher typically means above-market compensation.
 
 If the salary tool is not configured, skip this section.
+
+## Calibration from Past Applications
+
+*Derived by `/setup` on 2026-08-17 from 96 tracked applications, 34 with final outcomes.
+Descriptive, not prescriptive — update as more outcomes land.*
+
+**The channel signal is the strongest in the data, and it is stark.** All three applications that
+reached a live conversation came through a recruiter — Nitra (VP of Product, agency recruiter),
+Aven (inbound), Duet/Leap Health (inbound via North33). **Zero interviews have come from a cold
+application**, across roughly 45 submitted through job boards, ATS links, and research-sourced
+postings. Weight recruiter-sourced and referral-sourced roles higher, and treat a cold ATS
+submission as low-yield unless something else about the role is exceptional.
+
+**Level signal:** the roles that converted were **VP of Product** and **Head of Engineering** —
+leadership scope. The ten explicit rejections were almost entirely **Senior/Staff IC PM** reqs at
+healthtech scaleups (Medallion, Viz.ai, Abridge, Zocdoc, Tennr, EliseAI, Charta, Headway, Rula,
+Charlie Health). Combined with the level-optics note above, this suggests the Director-applying-down
+problem is real and is costing applications. Either target leadership scope, or address the
+level question explicitly and early in the letter.
+
+**Location is the top self-imposed filter.** Ten applications were withdrawn by Alex, and nearly
+every one was relocation or location (AWS, Hippocratic AI, Commure/California, Microsoft AI
+RAMP/Redmond, Assort Health/SF). Apply the Location gate *before* investing in a fit evaluation —
+Assort Health was logged as the strongest requirement match in the entire pipeline and was still
+unusable on geography.
+
+**Verify the req exists before drafting.** One application (Maven Clinic, Senior PM
+Payments/Claims) was built against a req that a full Greenhouse API pull showed did not exist.
+Confirm the posting is live on the employer's own ATS before spending a drafting cycle.
+
+**Sector concentration:** healthcare technology throughout, with a secondary cluster in frontier AI
+(Anthropic ×4, OpenAI ×2, Microsoft AI ×3, Scale AI, Google). No outcome data yet distinguishes
+those two groups.
 
 ## Output Format
 

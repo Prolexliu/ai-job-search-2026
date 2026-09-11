@@ -14,47 +14,80 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+> **The authoritative bank is `documents/interview/STAR-BANK-MASTER.md`** — 20 complete stories
+> plus narrative answers, maintained by Alex and cross-referenced to resume bullets by ⭐# tag in
+> `documents/cv/MASTER-RESUME-REFERENCE.md` §5. **Read that file before any interview prep.**
+> Do not duplicate its content here; when a new interview produces a sharper answer, append it
+> *there*. Full S/T/A/R narratives live in `documents/interview/2026-04-24-story-bank.docx`.
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### Two modes of delivery
+- **Screen (30 min, recruiter):** lead with the *result*, one line of context, then stop. 45–60 seconds. The recruiter is checking four boxes only — can he do the job, do comp and logistics work, is the motivation real, are there red flags. Save the craft for the loop.
+- **Loop (hiring manager / panel):** full STAR, 2.5–3.5 min. Walk S→T→A→R, quantify every beat, use "I" not "we."
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### The five rules
+1. **"I", not "we."** Team goes in Situation/Result; ownership goes in Actions.
+2. **Quantify or cut.** Every result needs a number.
+3. **Result-first when time is short.** Inverted STAR signals confidence.
+4. **One story, one message.** Know the single sentence each story proves.
+5. **Stop talking.** Silence after a tight answer reads as confidence.
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### Competency → story quick-lookup
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+| If they ask about… | Lead story | Backup |
+|---|---|---|
+| Strategy / pivot / revenue growth | **#1 B2C→B2B pivot** | #6 Product OS |
+| Shipping AI in production / regulated tech | **#2 AI voice agents (HIPAA)** | #7 Microservices |
+| Team building / growing an org / talent | **#3 Scaling 4→15+** | #6 Product OS |
+| Execution under pressure / crisis / tough call | **#4 COVID Epic go-live** | #10 $1B Epic |
+| Disagreement / influencing up / pushback | **#11 Lean-test pivot buy-in** | #5 Exec disagreement |
+| Lean experiment / MVP / decision under uncertainty | **#11 Lean-test pivot buy-in** | #9 Portal |
+| Building process / product ops / 0→1 systems | **#6 Product OS** | #3 Team |
+| Technical decision / architecture / velocity | **#7 Microservices** | #2 AI |
+| Enterprise / clinical systems / integration depth | **#10 $1B Epic** | #8 Cerner HIMSS 7 |
+| Failure / understanding the problem / simplicity | **#9 Portal nobody used** | #11 Lean test |
+| Stakeholder complexity / cross-functional | **#10 $1B Epic** | #4 COVID |
+| Cross-cultural / distributed / Mandarin-Taiwan | **Mandarin bridge** | #3 Team |
+| Initiative without mandate | **#15 Data-intelligence meeting** | #12 Order health-check |
+| Speed *with* judgment | **#11 pair-telling variant** | #2 (slow), #4 (fast) |
+| Tenacity / staying through hard times | **#13 Staying through the squeeze** | #4 COVID |
+| Building trust / repairing a hard conversation | **#14 Hard pushback repair (CEO)** | Dashboard/Chief-of-Staff story |
+| Received tough feedback and acted on it | **#14 Hard pushback repair (CEO)** | #9 Portal failure |
 
 ## Common Tough Questions
 
-### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+### "Why did you leave Medmo / what's your current status?" ⚠️ get this exactly right
+> "Medmo was acquired by Covera Health and my position was eliminated as part of the post-merger restructuring. I negotiated my exit terms and took the transition as an opportunity to be intentional about what comes next rather than jumping at the first thing available."
+
+- Say **"acquisition,"** never "merger."
+- **Never** "we mutually decided" or "we negotiated to part ways" — both imply a choice Alex did not have.
+- **Never** say anything negative about former management. Pivot quickly to the role at hand.
+- **Never** write "Present" for Medmo. The role ended 2026-06-17.
 
 ### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+> Name the gap in one sentence, then pivot to the scarce half. The reusable move: *almost no one who can build these systems has also sat inside a health system's integration architecture and executive relationships at the same time.*
+
+Two gaps that come up constantly and have locked answers:
+- **Production LLM/RAG:** production = voice agents (tool use, orchestration, human-in-the-loop) **plus** OCR. Retrieval and evaluation were **prototyped only** — say so unprompted rather than letting it be assumed.
+- **Privacy-specialist depth:** "If you need a career privacy specialist, I'm not that. If you need someone who gets controls built into health AI products that actually ship, that's what I've done."
+
+### "Why are you applying to an IC role as a Director?" (the silent screen-out)
+> He wants the surface back. Management pulled him away from the customer, and he'd rather be levelled on evidence than on his last title. Address this proactively — it is the most likely unspoken objection on any IC req.
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> Product and engineering leadership at the platform layer where healthcare delivery, health data, and AI meet — keeping the product surface in hand rather than moving further from it.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> See the prepared answer in `STAR-BANK-MASTER.md` § "Narrative & non-STAR answers."
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.
+
+## ⚠️ Known exposure — prepared correction required
+
+`Alex-Liu-OpenAI-FDE-CoverLetter.docx` (2026-07-01) and `Alex-Liu-QualifiedHealth-CoverLetter.docx`
+(2026-07-02) both claim shipping **"LLM/RAG pipelines"** to production. Both were written before
+the AI-honesty rule was locked on 2026-07-15, and **both were submitted.** If either advances to a
+technical loop, Alex needs a prepared correction ready. Do not reuse those paragraphs anywhere.
 
 ## Questions You Should Ask Interviewers
 

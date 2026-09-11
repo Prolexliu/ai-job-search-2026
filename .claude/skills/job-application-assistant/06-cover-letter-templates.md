@@ -4,6 +4,20 @@ framework_version: 1.0.1
 
 # Cover Letter Templates and Tailoring Guide
 
+<!-- BEGIN ACTIVE-TEMPLATE (managed by /add-template - do not edit by hand) -->
+> **Active template override: `arial-letter`**
+>
+> A custom template is active. Where this block conflicts with the stock guidance below, this block wins. Structural advice below (tailoring, tone, page budget) still applies.
+>
+> - **Template skeleton:** `templates/cover_letters/arial-letter/template.docx`
+> - **Manifest:** `templates/cover_letters/arial-letter/TEMPLATE.md` — read for the five-paragraph structure, token inventory, and known pitfalls before drafting
+> - **Source extension:** `.docx` (Office Open XML, not LaTeX — `cover.cls` does not apply)
+> - **Compile command:** `soffice --headless --convert-to pdf --outdir . <file>.docx` (not xelatex). On macOS use `/Applications/LibreOffice.app/Contents/MacOS/soffice`.
+> - **Fonts:** Arial throughout (system font). Matches the `arial-onepage` CV template.
+> - **Page limit:** exactly 1 page
+> - **Output file:** `cover_letters/cover_<company>_<role>.docx`; fill placeholders with `templates/cover_letters/arial-letter/fill_template.py`
+<!-- END ACTIVE-TEMPLATE -->
+
 ## Template: Custom cover.cls (XeLaTeX)
 
 Cover letters use a custom LaTeX document class (`cover.cls`) with Lato/Raleway fonts.
