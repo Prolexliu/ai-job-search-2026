@@ -109,6 +109,17 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.claude/skills/` - AI skill definitions for the application workflow
 - `.agents/skills/` - Job search CLI tools
+- `job_search_tracker.csv` - the application tracker (gitignored personal data)
+- `documents/` - personal source material (gitignored): `cv/MASTER-RESUME-REFERENCE.md`, `interview/STAR-BANK-MASTER.md`, `interview/JD-GAP-REGISTER.md`, dated prep docs in `interview/`, one folder per application in `applications/`
+
+## Tracking & Standing Rules
+Merged from the Cowork project on 2026-09-11. **This repo is the single source of truth**; the iCloud Cowork folder is a frozen archive.
+- **Read `job_search_tracker.csv` before sourcing, ranking, or recommending any role.** Dedupe by company + specific req, not company alone. Surface the "materials ready, not submitted" backlog (`drafted` rows) before newly sourced roles.
+- **Every new JD gets a requirement-by-requirement gap analysis appended to `documents/interview/JD-GAP-REGISTER.md`.** Alex owns the Status column. Never close a keyword gap with a term Alex hasn't done - mark it `NEEDS ALEX INPUT`. Mirror closed gaps into the resume reference and STAR bank.
+- **`documents/cv/MASTER-RESUME-REFERENCE.md` is the content source for every resume** (locked facts, summary variants, bullet library with STAR cross-refs) - update it when new bullets are written. Append new or improved interview answers to `documents/interview/STAR-BANK-MASTER.md` after each interview.
+- **Verify location independently** - a posted NYC pay band is not evidence of an NYC seat; check the canonical careers page or the apply flow's work locations.
+- **Recruiter screens** usually ask a "build one / scale one" pair in the req's domain noun - prep a different project for each slot, and log the noun used.
+- **Record progress with `/outcome`** so the tracker row and `documents/applications/<company>_<role>/outcome.md` stay in sync.
 
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
