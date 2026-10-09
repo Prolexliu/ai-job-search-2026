@@ -120,6 +120,7 @@ Merged from the Cowork project on 2026-09-11. **This repo is the single source o
 - **Verify location independently** - a posted NYC pay band is not evidence of an NYC seat; check the canonical careers page or the apply flow's work locations.
 - **Recruiter screens** usually ask a "build one / scale one" pair in the req's domain noun - prep a different project for each slot, and log the noun used.
 - **Record progress with `/outcome`** so the tracker row and `documents/applications/<company>_<role>/outcome.md` stay in sync.
+- **Every deliverable must end up on Alex's local computer** (set 2026-10-09). CVs, cover letters, archived postings, and tracker rows are gitignored, so they only land in Alex's local folders when the session runs on his machine. At the start of any `/scrape`, `/apply`, `/interview`, or `/outcome` run, check `CLAUDE_CODE_REMOTE`. If it is `true` (a cloud session), tell Alex before drafting that files will not reach his computer automatically, and recommend he continue locally: the Claude desktop app on his local `ai-job-search-2026` folder, or `claude remote-control` run in that folder. If he continues in the cloud anyway, send every generated file as a download card naming its local destination folder (`cv/`, `cover_letters/`, `documents/applications/<company>_<role>/`), and give each new tracker row as a copyable CSV line for his local `job_search_tracker.csv`. **Never commit or push gitignored personal files**: this repo is a public fork.
 
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
